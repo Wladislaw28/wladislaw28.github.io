@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="shrink-to-fit=no, width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Gallery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Collections</a>
+                    <button class="nav-item btn btn-primary" type="button">Add photo</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">All</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Pink</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Blue</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn my-2">Yellow</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card-columns">
+                    <div data-key="pink" class="card text-white">
+                        <img class="card-img" src="img/img-1.jpg" alt="Card image">
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-1.jpg" class="btn btn-light download-btn">
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">
+                        <a href="img/img-2.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-2.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-2.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-3.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-3.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-3.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-4.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-4.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-4.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-5.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-5.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-5.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">
+                        <a href="img/img-6.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-6.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-6.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">
+                        <a href="img/img-7.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-7.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-7.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">
+                        <a href="img/img-8.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-8.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-8.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-9.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-9.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-9.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">
+                        <a href="img/img-10.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-10.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-10.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-11.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-11.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-11.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">
+                        <a href="img/img-12.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-12.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-12.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="blue" class="card text-white">
+                        <a href="img/img-13.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-13.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-13.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">
+                        <a href="img/img-14.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-14.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-14.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="pink" class="card text-white">
+                        <a href="img/img-15.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-15.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-15.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-key="yellow" class="card text-white">
+                        <a href="img/img-16.jpg" class="card-ward">
+                            <img class="card-img" src="img/img-16.jpg" alt="Card image">
+                        </a>
+                        <div class="card-img-overlay d-flex flex-column justify-content-between">
+                            <div class="top-block text-right">
+                                <a href="img/img-16.jpg" class="btn btn-light download-btn" download>
+                                    <i class="fas fa-download"></i>
+                                </a>
+                            </div>
+                            <div class="bottom-block">
+                                <div class="author d-inline-block">
+                                    <img src="img/avatar.jpeg" alt="#" class="author-avatar rounded-circle">
+                                    <span>John Doe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="flex-column justify-content-between">
+            <div class="top-block d-flex justify-content-between">
+                <a href="#" class="btn btn-light download-btn" download>
+                    <i class="fas fa-download"></i>
+                </a>
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="img-wrap align-self-center">
+                <img src="#" alt="#" class="image">
+            </div>
+            <div class="bottom-block">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.filter-btn').click(function () {
+                if ($(this).hasClass('active')){
+                    return;
+                }
+                $('.filter-btn.active').button('toggle');
+                $(this).button('toggle');
+                if ($(this).text() === 'All'){
+                    $('.card').show(300);
+                } else {
+                    $('.card').hide().filter('[data-key="'+$(this).text().toLowerCase()+'"]').show(300)
+                }
+            });
+            $('.card').click(function () {
+                $('body').toggleClass('stop-scroll');
+                let image = $(this).find('.card-img').attr('src');
+                let author = $(this).find('.bottom-block').html();
+                let modal = $('#modal');
+                modal.css('display', 'flex');
+                modal.find('.image').attr('src', image);
+                modal.find('.download-btn').attr('href', image);
+                modal.find('.bottom-block').html(author);
+            });
+            $('#modal .close').click(function () {
+                $('#modal').css('display', 'none');
+                $('body').toggleClass('stop-scroll');
+            })
+        })
+    </script>
+</body>
+</html>
