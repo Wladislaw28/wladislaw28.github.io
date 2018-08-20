@@ -1,0 +1,42 @@
+@media (max-width: 1199px) {
+	html{
+		font-size: 8px;
+	}
+
+}
+
+@media (max-width: 991px) {
+	html{
+		font-size: 7px;
+	}
+		.visible-lg{
+		display: none;
+	}
+	.m-menu-link{
+		display: block;
+	}
+	.get-started-btn{
+	margin: 0;
+	}
+	.price-tags{
+		flex-direction: column;
+	}
+	.price-tag{
+		width: 90%;
+		margin: 2rem auto;
+	}
+	.footer-menu{
+		display: none;
+	}
+	.footer-wrap{
+		justify-content: center;
+	}
+	.legal{
+		flex-direction: column;
+		padding-bottom: 5rem;
+	}
+	.social-links a{
+		margin-top: 2rem;
+		font-size: 3.2rem;
+	}
+}

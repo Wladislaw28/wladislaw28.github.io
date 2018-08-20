@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FlexBox</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+
+	<ul class="m-menu">
+		<li class="close-menu">&times;</li>
+		<li><a href="#" class="menu-link">Home</a></li>
+					<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
+					<li><a href="#" class="menu-link">Freatures</a></li>
+					<li><a href="#" class="menu-link">Articles</a></li>
+					<li><a href="#" class="menu-link">Pricing</a></li>
+					<li><a href="#" class="get-started-btn menu-link">get started</a></li>
+	</ul>
+
+
+	<div class="main">
+		<div class="main-overlay"></div>
+		<div class="header">
+			<div class="logo">
+				<img src="img/logo.png" alt="logo" width="20%">
+			</div>
+			<a href="" class="m-menu-link">
+				<i class="fa fa-bars"></i>
+			</a>
+				
+			<div class="menu visible-lg">
+				<ul>
+					<li><a href="#" class="menu-link">Home</a></li>
+					<li><a href="#" class="menu-link">Why MISOCIAL</a></li>
+					<li><a href="#" class="menu-link">Freatures</a></li>
+					<li><a href="#" class="menu-link">Articles</a></li>
+					<li><a href="#" class="menu-link">Pricing</a></li>
+					<li><a href="#" class="get-started-btn menu-link">get started</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-text">
+			<span>SOCIAL MARKETING & ANALYTICS</span>
+			<h1>Pricing Table</h1>
+			<p>The goal of social marketing is always to change or maintain how people behave – not what they think or how aware they are about an issue. </p>
+		</div>
+		<a href="#" class="main-arrow">
+			<div class="arrow-down">
+				<img src="img/arrow.png" alt="down" width="100%">
+			</div>
+		</a>
+	</div>
+
+	<div class="table">
+		<div class="table-header">
+			<span class="table-subtitle">Misocial</span>
+			<h2>Select a Plan</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempora!</p>
+		</div>
+		<div class="price-tags">
+			<div class="price-tag">
+				<i class="fas fa-robot"></i>
+				<span>personal</span>
+				<h4><sup>$</sup>0<sub>/month</sub></h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime optio officia a, obcaecati cumque quo delectus praesentium, quia nobis numquam voluptates. Sit minima impedit ullam aperiam accusantium hic harum, totam!</p>
+				<button class="price-btn">select plan</button>
+			</div>
+			<div class="price-tag">
+				<i class="fas fa-space-shuttle"></i>
+				<span>personal</span>
+				<h4><sup>$</sup>29<sub>/month</sub></h4>
+				<p>Reiciendis et, alias? Illo ipsa, commodi quia quidem rerum nobis maiores minima magni, nulla fugiat non ullam deleniti consectetur cumque quam ad laboriosam recusandae consequuntur eum nisi temporibus doloribus. Similique!</p>
+				<button class="price-btn">select plan</button>
+			</div>
+			<div class="price-tag">
+				<i class="fas fa-user-astronaut"></i>
+				<span>personal</span>
+				<h4><sup>$</sup>49<sub>/month</sub></h4>
+				<p>Unde minus inventore, deleniti velit temporibus itaque voluptate, natus quam tenetur ullam laudantium fuga asperiores laboriosam quae quo atque nulla voluptates officiis debitis perspiciatis harum cupiditate fugiat at aut. Quos!</p>
+				<button class="price-btn">select plan</button>
+			</div>
+		</div>
+	</div>
+
+<div class="call-to-action">
+	<div class="call-to-action-overlay">
+	<span>SOCIAL MARKETING & ANALYTICS</span>
+	<h4>Take control of your data</h4>
+	<button class="cta-btn">get started</button>
+	<button class="cta-btn">explore features</button>
+</div>
+
+<div class="footer-wrap">
+	<div class="footer">
+		<div class="logo">
+			<img src="img/logo.png" alt="" width="20%">
+		</div>
+		<div class="footer-menu">
+				<ul>
+					<li><a href="#" class="footer-menu-link">Home</a></li>
+					<li><a href="#" class="footer-menu-link">Why MISOCIAL</a></li>
+					<li><a href="#" class="footer-menu-link">Freatures</a></li>
+					<li><a href="#" class="footer-menu-link">Articles</a></li>
+					<li><a href="#" class="footer-menu-link">Pricing</a></li>
+					<li><a href="#" class="footer-get-started footer-menu-link">get started</a></li>
+				</ul>
+			</div>
+	</div>
+</div>
+
+<div class="legal">
+	<div class="copy">
+		<p>Mass Impressions & Traunmautrian . Make the right impression.</p>
+	</div>
+	<div class="social-links">
+		<a href="#"><i class="fab fa-facebook-f"></i></a>
+		<a href="#"><i class="fab fa-google-plus-g"></i></a>
+		<a href="#"><i class="fab fa-instagram"></i></a>
+		<a href="#"><i class="fab fa-telegram-plane"></i></a>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  
+  <script>
+  	$(function(){
+  		var link = $('.m-menu-link');
+  		var close = $('.close-menu');
+  		var menu = $('.m-menu');
+  		link.on('click',function(event){
+  			event.preventDefault();
+  			menu.toggleClass('m-menu__active');
+  		});
+  		close.on('click',function(event){
+  			event.preventDefault();
+  			menu.toggleClass('m-menu__active');
+  		});
+  	})
+  </script>
+
+
+</body>
+</html>
