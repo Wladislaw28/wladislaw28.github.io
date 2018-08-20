@@ -1,2 +1,4 @@
-# wladislaw28.github.io
+# Владислав Михасёв
 Front-end developer
+Work, Sites, Landing pagé, Effects, Javascript
+
