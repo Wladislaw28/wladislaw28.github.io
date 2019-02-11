@@ -1,5 +1,5 @@
 ## Wladislaw Mihasev
-# Front-end developer
+# Junior Front-End developer
 
 
 [Bootstrap gallery](https://wladislaw28.github.io/bootstrap_gallery/)
