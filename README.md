@@ -2,7 +2,8 @@
 # Junior Front-End developer
 
 
-[Bootstrap gallery](https://wladislaw28.github.io/bootstrap_gallery/)
+[Bootstrap gallery](https://wladislaw28.github.io/bootstrap_gallery/) - Adaptive photo gallery with the ability to download any of the pictures
+
 
 
 [Website using Flexbox technology](https://wladislaw28.github.io/flexbox/)
