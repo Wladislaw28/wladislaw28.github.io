@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hamburger</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	  <link rel="stylesheet" type="text/css" href="main.css">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+		<button class="c-hamburger c-hamburger--rot">
+	  <span>toggle menu</span>
+	</button>
+	 
+	<button class="c-hamburger c-hamburger--htx">
+	  <span>toggle menu</span>
+	</button>
+	 
+	<button class="c-hamburger c-hamburger--htla">
+	  <span>toggle menu</span>
+	</button>
+	 
+	<button class="c-hamburger c-hamburger--htra">
+	  <span>toggle menu</span>
+	</button>
+
+	<script>
+		(function() {
+		 
+		  "use strict";
+		 
+		  var toggles = document.querySelectorAll(".c-hamburger");
+		 
+		  for (var i = toggles.length - 1; i >= 0; i--) {
+		    var toggle = toggles[i];
+		    toggleHandler(toggle);
+		  };
+		 
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		    });
+		  }
+		 
+		})();
+	</script>
+</body>
+</html>
