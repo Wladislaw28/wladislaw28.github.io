@@ -1,0 +1,131 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}a{
+	text-decoration:none;
+}table {
+    border-spacing: 0;
+}fieldset,img {
+    border: 0;
+}address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: 300;
+    font-style: normal;
+}strong{
+	font-weight: bold;
+}ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}caption,th {
+    text-align: left;
+}h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+
+@font-face {
+	font-family: 'futurabook';
+	src: url(../fonts/FuturaPTBook.otf);
+}
+@font-face{
+font-family: 'font1';
+src: url('../fonts/10175.otf');
+font-style: normal;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+
+a,ul,li,button {font-family: 'futurabook' !important}
+
+p {font-family: 'futurabook'}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+}
+.fonimg {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+}
+
+h3,h2,h1{
+    text-align: center;
+}
+.fonimg img{
+    height: 130vh;
+}
+.center {
+    text-align: center;
+}
+#section1 {
+    background: url(../img/3.png);
+    background-position: left;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+#section3 {
+    background: url(../img/2.png);
+    background-position: right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+#section2 ul li {
+    font-size: 1.3em;
+}
+.timer {
+    background: #ff000091;
+    min-height: 86px;
+    border-top: 2px solid #212121;
+    border-bottom: 2px solid #212121;
+}
+
+.gradient {
+    background: linear-gradient(0deg, #ebfc00 20%, #8d0999 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 0.3em 0.6em ;
+/*    border: 3px solid transparent;
+    border-image: linear-gradient(120deg, #333 20%, #ffff00 70%);
+    border-image-slice: 1;*/
+}
+
+/* Media css */
+
+
+
+@media (max-width: 500px) {
+  
+}
+@media (min-width: 360px) and (max-width: 500px) {
+
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+  
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+  
+}
