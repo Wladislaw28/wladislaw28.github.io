@@ -6,4 +6,5 @@
 
 
 
-[Website using Flexbox technology](https://wladislaw28.github.io/flexbox/)
+[Website using Flexbox technology](https://wladislaw28.github.io/flexbox/) - Website created using Flexbox technology
+
