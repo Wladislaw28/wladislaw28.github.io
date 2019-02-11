@@ -1,0 +1,60 @@
+html{
+	height: 100%;
+	overflow: hidden;
+}
+
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-family: sans-serif;
+
+}
+
+header{
+	box-sizing: border-box;
+	min-height: 100vh;
+	text-align: center;
+	padding-top: 25%;
+	transform-style: inherit;
+	width: 100vw;
+}
+
+
+
+
+
+header::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+	transform-origin: center;
+	min-height: 100vh;
+	background-image: url('https://images.unsplash.com/photo-1531578595900-68d89afb290c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2fcd7511574ae2afdb3b666fee89075c&auto=format&fit=crop&w=1050&q=80');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/*Паралакс*/
+	transform: translateZ(-1px) scale(2);
+}
+
+header h1, small{
+	font-size: 42px;
+	margin-top: -100px;
+	color: #fff;
+}
