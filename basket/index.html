@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Шаблон для старта разработки посадочной страницы | smartlanding.biz</title>
+<meta name="description" content="">
+<meta name="Keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Дмитрий Давыдов">
+<!-- Таблица стилей Bootstrap -->
+	<link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Основная таблица стилей -->
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/animate.min.css" type="text/css"> -->
+<!-- Иконический шрифт -->
+	<link href="css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+
+</head>
+<body>
+<header class="main-head">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-xs-3">
+        <img src="img/logo.png" alt="smartlanding.biz">
+      </div>
+      <div class="col-sm-8 col-xs-9">
+       <div class="basket-wrapper">
+        <a href="#" class="cart-button" style="display: none;">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span class="cart-button-quantity"></span>
+          <span class="cart-button-label"></span><br/>
+          <span class="basket-help-text">Показать/Скрыть содержимое</span>
+          <!-- Опционально, вместо span элементов можно поместить сюда картинку для кнопки. -->
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="goods-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="goods-list">
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 3331</div>
+            <div class="good-price">1000 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 3331" data-price="1000" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 4441</div>
+            <div class="good-price">1000 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 4441" data-price="1000" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 5551</div>
+            <div class="good-price">1000 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 5551" data-price="1000" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 6661</div>
+            <div class="good-price">1500 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 6661" data-price="1500" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i>  корзину</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 7771</div>
+            <div class="good-price">1500 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 7771" data-price="1500" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-6 good-inner">
+          <div class="good-item">
+            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+            <div class="good-name">JanSport PD 8881</div>
+            <div class="good-price">1500 руб.</div>
+            <a href="#" class="cart-buy-button" data-name="JanSport PD 8881" data-price="1500" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<!-- Библиотека jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- Скрипт Bootstrap.js -->
+<script src="libs/bootstrap/js/bootstrap.js"></script>
+<!-- Скрипт корзины -->
+<script src="libs//salejs/cart.js"></script>
+<script>
+  cartjs.initialize({
+    emailOrdersTo  : 'smart-landing@yandex.ru', // Ваша почта
+    language       : 'russian',                 // Язык
+    currency       : 'руб.',                    // валюта
+
+    requireName    : true,      // Спрашивать имя покупателя.
+    requirePhone   : true,      // Спрашивать телефон покупателя.
+    requireEmail   : false,     // Спрашивать почту покупателя.
+    requireAddress : false,     // Спрашивать адрес покупателя.
+  });
+  cartjs.add({
+  name     : "Nexus",
+  price    : 450,
+  quantity : 1
+})
+</script>
+</html>
