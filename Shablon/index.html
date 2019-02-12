@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Websharks</title>
+<!-- Link CSS -->
+<link rel="stylesheet" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" href="css/websharks.css" />
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/sweetalert.css">
+<!-- Link JS -->
+<!--[if lt IE 9]>
+	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Играет роль последовательность подключения скриптов. Не меняй -->
+<script src="js/scrolloverflow.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/jquery.fullpage.extensions.min.js"></script> -->
+<script src="js/jquery.easings.min.js"></script>
+
+
+<script type="text/javascript"> // Супер полная документация на сайте https://github.com/alvarotrigo/fullPage.js
+
+
+
+// крутая плюшка этого скрипта - к элементам изображений и видео вместо src пишешь data-src, тогда картинка или видео загрузятся только при посещении страницы - ускоряет загрузку основных скриптов.
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			sectionsColor:['#fff','#454545','#fff','#454545','#fff','#fff'], // бэкграунг секции
+			anchors:['firstPage','secondPage','3rdPage','4thPage','5thPage','6thPage'], // работает как айдишник и для ссылок
+			menu:'#menu',
+			navigation:true,
+			navigationTooltips:['','','','Подсказка 3','Артем',''], // на компах по ховеру навигационных точек будет всплывашка
+			slidesNavigation:true,
+			navigationPosition:'right', // слева или справа left
+			loopHorizontal:false, // бесконечная прокрутка по горизонтали секций
+			continuousVertical: true, // бесконечный сайт
+			paddingTop:55, // отступы секций, работает как top: px
+			paddingBottom:25, // анологично
+			css3:false, // для некоторых функций играет роль, перебивает стили.
+			slidesNavigation: true,
+			scrollbars: false,
+			scrollingSpeed:700, //скорость прокрутки
+			resizeScrollbars: true,
+
+
+			recordHistory: false, // перемещение по секциям сопровождается записью в историю (писать или нет это)
+
+
+
+			// самая сложная херня - меняет контент при посещении определенной секции, можно програмить что угодно. Я в основном менял в стилях цвет шапки или фейд эффекты
+
+
+			// afterLoad:function(link,index) { 
+				// 	if(link == 'firstPage') {
+				// 		$("#header").css({'background':'#151515'})
+				// 	}			
+			// },
+
+			// onLeave:function(link,index) {
+			// 	$("#header").css({'background':'transparent'})				
+			// },
+			afterLoad:function(link,index) { 
+					if(link == 'secondPage') {
+						$("#asd").css({'color':'red'})
+					}			
+			},
+
+			onLeave:function(link,index) {
+				$("#asd").css({'color':'green'})			
+			},
+			responsiveWidth: 990, // отвечает при достижении какой ширине экрана сайт будет мобильным - для бутстрапа 990 включается сетка SM
+			afterResponsive: function(isResponsive){},		// при изменении ширины экрана тоже можно что-то запрограмировать		
+		});
+	});
+</script>
+<style type="text/css">
+.navbar {
+	margin-bottom: 0;
+	background: transparent;
+	border:0;
+}
+body {
+	text-align: center;
+}	
+  /*.bootstrap-widget .popover {margin-left: -10px !important;}
+  .bootstrap-widget .popover .arrow {margin-left: 10px !important;}	*/
+</style>
+</head>
+<body>
+<header data-role="header" id="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-9 ">
+				<nav class="navbar navbar-default" role="navigation"> <!-- Бутстрапная шапка , просто сохраяняй структуру-->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand " href="#firstPage" style="margin-top: 5px;color: #888">
+							Бренд
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<nav class="menu">
+							<ul id="menu" class="nav navbar-nav">
+								<li data-menuanchor="firstPage" class="active"><a href="#firstPage">Пункт 1</a></li>  <!-- Дата меню анкор как раз и отвечает за работу ссылки к секции. Класс эктив выбирает что является главным--> 
+								<li data-menuanchor="secondPage"><a href="#secondPage">Пункт 2</a></li>
+								<li data-menuanchor="3rdPage"><a href="#3rdPage">Пункт 3</a></li>
+								<li data-menuanchor="4thPage"><a href="#4thPage">Пункт 4</a></li>
+								<li data-menuanchor="5thPage"><a href="#5thPage">Пункт 5</a></li>
+								
+							</ul>
+						</nav>
+					</div>
+				</nav>
+			</div>
+			<div class="col-md-3">
+				<a href="#" class="cart-button" style="display: none;">
+				  <span class="cart-button-quantity"></span>
+				  <span class="cart-button-label"></span>
+				  <!-- Or put an image here instead of span elements with text. -->
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<div id="fullpage"> <!-- Обязательный тег для развертывания шаблона -->
+	<div class="section " id="section0" > <!-- Каждая секция начинается с этого. Отсчет от 0 -->
+
+		<div class="container"> <!-- Открываем бутсрап -->
+			<div class="row">
+				<h1>Page 1</h1>
+				<div class="good-item"> <!-- Интернет магазин на ЛП с помощью Аджакс -->
+	            <div class="good-img"><img src="img/tovar.png" alt="рюкзак"></div>
+	            <div class="good-name">JanSport PD 8881</div>
+	            <div class="good-price">1500 руб.</div>
+	            <a href="#" class="cart-buy-button" data-name="JanSport PD 8881" data-price="1500" data-quantity="1"><i class="fa fa-shopping-basket" aria-hidden="true"></i> В корзину</a><!--  В атрибутах написано что за что отвечает -->
+	          	</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1"> <!-- Секция2 -->
+
+		<div class="slide active"> <!-- Внутри секции можно запишнуть слайды. Отвечает специальный класс за это, активный слайд - эктив -->
+			<div class="container">
+				<div class="row">
+					<h1 id="asd">Slide 1</h1>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="container">
+				<div class="row">
+					<h1>Slide 2</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2"> 
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3"> 
+		<div class="slide active">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>	
+		</div>		
+	</div>
+	
+	<div class="section" id="section4"> 
+		<div class="container">
+			<div class="row">
+				<a data-fancybox data-src="#hidden-content" href="javascript:;">Начало сотрудничества</a> <!-- Всплывашка для обратной связи через ссылку на фенсибокс -->
+			</div>
+		</div>
+	</div>
+			
+</div> <!-- end fullPage -->
+
+<div style="display: none;"  id="hidden-content"> <!-- Сама форма идет отсюда -->
+	<div class="container-fluid">
+		<h2 align="center">Будем рады с вами работать</h2>
+
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<form id="forma1"> <!-- Обязательно сверять нужно айдишник с тем что в скрипте ниже. На каждую форму свой скрипт! -->
+					<input type="hidden" name="project_name" value="Websharks">  <!-- Я использую обратную связь не через методы пост или гет, а более универсально. В три обязательных поля пишем Имя письма, адресс и тему -->
+					<input type="hidden" name="admin_email" value="mman123@yandex.by">
+					<input type="hidden" name="form_subject" value="Шаблон">
+					<div id="modal">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3">
+								<input name="name" placeholder="Ваше имя *" type="text" required> <!-- Сами поля ввода -->
+							</div>
+							<div class="col-md-6 col-md-offset-3">
+								<input name="phone" placeholder="Телефон" type="text">
+							</div>
+							<div class="col-md-6 col-md-offset-3">
+								<input name="mail" placeholder="Почта" type="text">
+							</div>
+							<div class="col-md-6 col-md-offset-3" style="text-align: center;">
+								<button class="start">Заказать Звонок</button> <!-- Скрипт максимально прост. Удача идет по факту нажатия батона -->
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/anime.min.js"></script> <!-- Аниме отвечает за крутую анимацию . Ей я делал прыгающие буковки-->
+<script src="js/websharks.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/mask.js"></script>
+
+<script src="http://salejs.com/v1/cart.js"></script> <!-- Через эту херню работает инет магазин на ЛП . БОлее подробно у них на сайте-->
+<script>
+  cartjs.initialize({
+    emailOrdersTo  : 'mman123@yandex.by',
+
+    // Optional configuration options.
+    language       : 'russian', // 'russian' and 'ukrainian' also available.
+    currency       : '$',
+    requireName    : true,      // Require name in contact form.
+    requirePhone   : true,      // Require phone in contact form.
+    requireEmail   : false,     // Require email in contact form.
+    requireAddress : false,     // Require address in contact form.
+  })
+</script>
+
+<script> //Скрипт для маски поля ввода телефона. Пробелы, черточки и прочие символы с телефона начинают творить дичь. Лучше их всегда убирать. За любую цифру отвечает 9
+  $(function(){
+   $("input[name=phone]").mask("+375999999999");
+ });
+</script>
+
+<script type="text/javascript"> // Этой херней отправляется в файл мейл данные для отрпавки формы
+$("#forma1").submit(function() { //Change
+	var th = $(this);
+	$.ajax({
+		type: "POST",
+	url: "mail.php", //Путь
+	data: th.serialize()
+}).done(function() {
+	return swal({ //Это свит алерт, очень мудреная херня, отвечает за всплывающие диалоговые формы, такая же в тулиграме. Настройки смотри уних на сайте их много. Я в последних сайтах вообще кидаю редирект после удачи на другую страницу.
+		title: "Готово",
+		text: "Скоро ответим!",
+		showCancelButton: true,
+		closeOnConfirm: false,
+		animation: "slide-from-top",
+		html: true, // Главное подрубить режим  этот. По дефолту он фолс
+	});
+	setTimeout(function() {
+	    // Done Functions
+	    th.trigger("reset");
+	}, 1000);
+});
+return false;
+});
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- Мой скрипт на другое меню как на сайте гипс арт вылазящае сбока -->
+
+
+<!-- <div id="openclosemenu" style="display: none">
+		<nav style="display: table-cell;vertical-align: middle;">
+			<button id="closemenubutton"></button>
+			<ul >
+				<li data-menuanchor="firstPage" class="active"><a href="index.html#firstPage">• Главная</a></li>
+				<li data-menuanchor="secondPage"><a href="index.html#secondPage">• Калькулятор</a></li>
+				<li data-menuanchor="3rdPage"><a href="index.html#3rdPage">• Примеры работ</a></li>
+				<li data-menuanchor="4thPage"><a href="index.html#4thPage">• Это мы умеем</a></li>
+				<li data-menuanchor="5thPage"><a href="index.html#5thPage">• Наборы Gyps Art</a></li>
+				<li data-menuanchor="6Page"><a href="index.html#6Page">• Почемы мы?</a></li>
+			</ul>
+		</nav>
+	</div>
+
+<script>
+		document.getElementById('menubutton').onclick = function() {
+			document.getElementById('openclosemenu').style.display = 'table';
+			
+			
+			var link = document.querySelectorAll("#openclosemenu nav ul li a");
+
+			for (var i = 0; i < link.length; i++) {
+				var elem10 = link[i];
+				elem10.onclick = function() {
+					document.getElementById('openclosemenu').style.display = 'none'
+				}
+			}
+		};
+		document.getElementById('closemenubutton').onclick = function() {
+			document.getElementById('openclosemenu').style.display = 'none'
+		};
+		
+	</script> -->
+<!-- Стили для меню через кей фрейм идет анимация -->
+<!-- #openclosemenu {
+text-align: center;
+    animation: menu 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.9);
+    z-index: 9999;
+    top: 0;
+    right: 0;
+}
+  @keyframes menu {
+    0% {right: -100%;top:0;}
+    100% {right: 0;top:0;}
+  }
+#menubutton {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #fff;
+    float: right;
+    right: -100px;
+    top: -100px;
+    border-radius: 100%;
+    background: rgb(76, 175, 80);
+    transition: 0.5s;
+}
+#menubutton:hover {
+  background: rgba(38, 49, 15, 0.7);
+}
+#menubutton img {
+    position: absolute;
+    width: 20%;
+    top: 60%;
+    right: 59%;
+}
+#openclosemenu nav ul{
+  width: 50%;
+  margin: 0 auto;
+  transition: 0.8s;
+}  
+#openclosemenu nav ul li a{
+  cursor: pointer;
+  color: #fff;
+  line-height: 3;
+  font-size: 2em;
+  transition: 0.2s;
+  margin: 15px 0;
+}
+#openclosemenu nav ul li a:hover{
+  color: rgb(76, 175, 80);
+  text-decoration: underline;
+  width: 50%;
+  margin: 15px auto;
+}
+#openclosemenu button {
+  text-align: center;
+  background: url(../img/icons8-cancel-100w.png);
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left:20px;
+} -->

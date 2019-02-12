@@ -1,0 +1,406 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}a{
+	text-decoration:none;
+}table {
+    border-spacing: 0;
+}fieldset,img {
+    border: 0;
+}address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: 300;
+    font-style: normal;
+}strong{
+	font-weight: bold;
+}ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}caption,th {
+    text-align: left;
+}h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+
+@font-face {
+	font-family: 'futurabook';
+	src: url(../fonts/FuturaPTBook.otf);
+}
+@font-face{
+font-family: 'font1';
+src: url('../fonts/10175.otf');
+font-style: normal;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+.f100r {
+	font-family: 'font1', sans-serif;
+	font-weight: 100;
+}
+
+a,ul,li,button {font-family: 'font1'}
+
+p {font-family: 'futurabook'}
+
+header {
+	position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+#menu li a{	
+	background: transparent;
+	margin-right: 15px;
+	transition:0.6s;
+	border-radius: 8px;
+	padding: 10px 15px;
+    margin-top: 10px;
+}
+#menu li a:hover {
+	box-shadow: 0px 0px 10px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	transition:1s;
+	border-radius: 8px;
+}
+.navbar-brand img {
+	width: 20px;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+}
+.border {
+	position:relative;
+    width:100%;
+    height:120px;
+    display:block;
+}
+.border img {
+    transition:0.5s;
+    position:absolute;
+    left:calc(50% - 50px);
+    top:0;
+    width: 100px;
+}
+.border img:nth-child(2) {
+    opacity:0;
+}
+.border:hover img:nth-child(2) {
+    opacity:1;
+}
+.border:hover img:nth-child(1) {
+    opacity:0;
+}
+
+#modal input {
+	width: 100%;
+	padding: 7px 17px;
+	margin: 10px 0;
+    border: 0;
+    border-bottom: 2px dashed #505050;
+    text-align: center;
+}
+#modal input:focus {
+	width: 100%;
+	padding: 7px 17px;
+	margin: 10px 0;
+    border: 0;
+    border-bottom: 2px dashed #505050;
+    text-align: center;
+}
+.gradient {
+	/*background: linear-gradient(120deg, #333 20%, #ffff00 70%);*/
+	/*-webkit-background-clip: text;*/
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+	padding: 0.3em 0.6em ;
+	border: 3px solid transparent;
+	/*border-image: linear-gradient(120deg, #333 20%, #ffff00 70%);*/
+	/*border-image-slice: 1;*/
+}
+.gradient2 {
+	/*background: linear-gradient(120deg, #333 20%, #ffff00 70%);
+	-webkit-background-clip: text;
+	display: inline-block;*/
+	border: 3px solid transparent;
+	padding: 0.3em 0.6em ;
+}
+
+
+/* Media css */
+
+
+
+@media (max-width: 500px) {
+  /* стили для xs-устройств */
+  #menu li a {
+  color: #504d4a;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid #504d4a;
+  }
+  #menu li a:active {
+    /*background: #03A9F4;*/
+    color: #fff;
+  }
+  #fp-nav.left {
+    left: -5px;
+    transform: scale(0.7);
+  }
+  .fp-slidesNav.bottom {
+    bottom: -6px;
+    transform: scale(0.7);
+  }
+  .fp-controlArrow {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 103%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 20px;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      left: 10px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+    background-image: url(../img/next.png); 
+    animation: eye 6s linear infinite;
+  }
+  @keyframes eye {
+    0% {left: 45px;}
+    50% {left: 70px;}
+    100% {left: 45px;}
+  }
+}
+@media (min-width: 360px) and (max-width: 500px) {
+  /* стили для xs-устройств */
+  #menu li a {
+  color: #504d4a;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid #504d4a;
+  }
+  #fp-nav.left {
+    left: 0px;
+  }
+  .fp-slidesNav.bottom {
+    bottom: -3px;
+  }
+  .fp-controlArrow {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 103%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 20px;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      left: 10px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+    background-image: url(../img/next.png); 
+    animation: eye 6s linear infinite;
+  }
+  @keyframes eye {
+    0% {left: 45px;}
+    50% {left: 70px;}
+    100% {left: 45px;}
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  /* стили для xs-устройств */
+  #menu li a {
+  color: #504d4a;
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  border: 1px solid #504d4a;
+  }
+  #fp-nav.left {
+    left: 0;
+  }
+  .fp-slidesNav.bottom {
+    bottom: -3px;
+  }
+  .fp-controlArrow {
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 103%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 30px;
+  height: 20px;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      left: 10px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+    background-image: url(../img/next.png); 
+    animation: eye 6s linear infinite;
+  }
+  @keyframes eye {
+    0% {left: 45px;}
+    50% {left: 70px;}
+    100% {left: 45px;}
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+  #fp-nav.right {
+    right: 15px;
+  }
+  .fp-controlArrow {
+      -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+      -moz-user-select: none; /* mozilla browsers */
+      -khtml-user-select: none; /* webkit (konqueror) browsers */
+      -ms-user-select: none; /* IE10+ */
+      position: absolute;
+      z-index: 4;
+      background-position: center;
+      background-size: cover;
+      width: 67.5px;
+      height: 45px;
+      cursor: pointer;
+      margin-top: -38px;
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      right: 118px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+      right: 43px;
+      background-image: url(../img/next.png);
+  }    
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+  
+  #fp-nav.right {
+    right: 15px;
+  }
+  .navbar-nav {
+    float: left;
+    position: absolute;
+    left: 50%;
+  }
+  .navbar-nav > li {
+    right: 50%;
+  }
+  .fp-controlArrow {
+      -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+      -moz-user-select: none; /* mozilla browsers */
+      -khtml-user-select: none; /* webkit (konqueror) browsers */
+      -ms-user-select: none; /* IE10+ */
+      position: absolute;
+      z-index: 4;
+      background-position: center;
+      background-size: cover;
+      width: 67.5px;
+      height: 45px;
+      cursor: pointer;
+      margin-top: -38px;
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      right: 118px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+      right: 43px;
+      background-image: url(../img/next.png);
+  }    
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+  #fp-nav.right {
+    right: 15px;
+  }
+  .navbar-nav {
+    float: left;
+    position: absolute;
+    left: 50%;
+  }
+  .navbar-nav > li {
+    right: 50%;
+  }
+  .fp-controlArrow {
+      -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+      -moz-user-select: none; /* mozilla browsers */
+      -khtml-user-select: none; /* webkit (konqueror) browsers */
+      -ms-user-select: none; /* IE10+ */
+      position: absolute;
+      z-index: 4;
+      background-position: center;
+      background-size: cover;
+      width: 67.5px;
+      height: 45px;
+      cursor: pointer;
+      margin-top: -38px;
+      -webkit-transform: translate3d(0,0,0);
+      -ms-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+  }
+  .fp-controlArrow.fp-prev {
+      right: 118px;
+      background-image: url(../img/prev.png);
+  }
+  .fp-controlArrow.fp-next {
+      right: 43px;
+      background-image: url(../img/next.png);
+  }
+}
