@@ -1,0 +1,215 @@
+*, *:after, *:before {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.header{
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	display: flex;	
+	position: fixed;
+}
+
+.menu{
+
+	width: 80%;
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+}
+
+.menu a{
+	color: #fff;
+	text-decoration: none;	
+}
+
+.menu a:hover{
+	opacity: 0.7;
+}
+
+.logo{
+	width: 20%;
+}
+
+.section{
+	height: 400px;
+}
+.information{
+	background-color: red;
+}
+.works{
+	background-color: orange;
+}
+.about{
+	background-color: green;
+}
+.contacts{
+	background-color: yellow;
+}
+.blog{
+	background-color: blue;
+}
+
+.menu-close{
+	display: none;
+}
+
+@media (max-width: 575px) {
+	.menu-close{
+		position: fixed;
+		right: 20px;
+		top: 15px;
+		color: #fff;
+		z-index: 11;
+	}
+	.menu{
+		height: 0;
+		display: flex;
+		flex-direction: column;
+		background-color: #212121;
+		z-index: 10;
+		}
+	.menu-mob{
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		width: 20px;
+		height: 20px;
+		z-index: 5;
+	}
+
+	.menu-mob span{
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		top: 9px;
+		left: 0;
+		background-color: #fff;
+	}
+
+	.menu li{
+		display: none;
+	}
+
+	.menu-mob span::before{
+		content: '';
+		left: 0;
+		width: 20px;
+		height: 2px;
+		position: absolute;
+		top: -9px;
+		background-color: #fff;
+	}
+	.menu-mob span::after{
+		content: '';
+		left: 0;
+		width: 20px;
+		height: 2px;
+		position: absolute;
+		top: 9px;
+		background-color: #fff;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
