@@ -22,3 +22,6 @@
 
 
 [Web-Site #1](https://wladislaw28.github.io/%D1%81%D0%B0%D0%B9%D1%821/) - Web-Site #1
+
+
+[Shablon(website template)](https://wladislaw28.github.io/Shablon/) - Shablon(website template)
