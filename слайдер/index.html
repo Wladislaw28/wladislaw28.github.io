@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Слайдер</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	 <link rel="stylesheet"
+  		href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+</head>
+<body>
+	<div class="logo">
+		<img src="img/logo.png" width="60" height="60">
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+
+				<!-- Slaid1 -->
+			<div class="swiper-slide">
+				<div class="container container-slide1">
+					<div class="cols">
+					<div class="left-col slide-animal-item">
+						<img src="img/mobile1.png" id="mobile1">	
+					</div>
+					<div class="right-col">
+						<h2 class="title1">Oleose App Landing Theme</h2>
+						<div class="link-block">
+							<a href="#" class="button1" type="button">Learn More</a>
+							<a href="#" class="button2" type="button">Get app</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<!-- Slaid2 -->
+			<div class="swiper-slide">
+				<div class="container container-slide2">
+					<h2 class="title2">Every Pixel <i class="fas fa-heart"></i></h2>
+					<div class="img-slide2">
+						<img src="img/sait.png" width="500">
+					</div>
+				</div>				
+			</div>
+
+
+			<!-- Slaid3 -->
+			<div class="swiper-slide">
+				<div class="container container-slide3">
+					<div class="cols">
+					<div class="left-col">
+						<h2>Powerful Responsive App Landing Page</h2>
+							<p>Editors, who receive no royalties or expenses and who are only very rarely commissioned by the Society, are encouraged to approach the Editorial Secretary with a detailed proposal of the text they wish to suggest to the Society early in their work; interest may be expressed at that point, but before any text is accepted for publication the final typescript must be approved by the Council (a body of some twenty scholars), and then assigned a place in the printing schedule.</p>
+						<a href="#" class="button1" type="button">Purchase</a>
+					</div>
+					<div class="right-col">
+						<img src="img/sait2.png">
+					</div>
+				</div>	
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<div class="swiper-pagination"></div>
+
+
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/animate.js"></script>
+	 <!-- Initialize Swiper -->
+	  <script>
+	    var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 1,
+	      onlyExternal: true,
+	      slideChangeTransitionStart: true,
+	      effect: 'fade',
+	      loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	  </script>
+
+	  <script>
+	  	mobile1.onclick = function() {
+      var start = Date.now(); // сохранить время начала
+
+      var timer = setInterval(function() {
+        // вычислить сколько времени прошло из opts.duration
+        var timePassed = Date.now() - start;
+
+        mobile1.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+	  </script>
+
+
+</body>
+</html>

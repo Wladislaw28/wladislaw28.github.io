@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
+
+h1, h2, h3 , h4, h5, h6{
+	font-family: "Raleway";
+	font-weight: 250;
+	color: #333;
+}
+
+
+img{
+	max-width: 100%;
+}
+
+
+
+/*a:hover, a:focus{
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
+}*/
+
+
+
+ html, body {
+      position: relative;
+      height: 100%;
+    }
+
+
+body{
+	padding: 0px 4px; 
+	margin: 0px; 
+}
+
+
+body{
+background: #661466; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #661466 0%, #c889ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #661466 0%,#c889ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #661466 0%,#c889ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#661466', endColorstr='#c889ff',GradientType=1 );
+}
+
+.container{
+	width: 960px;
+	height: 100%;
+}
+
+.cols{
+	display: flex;
+}
+
+.left-col, .right-col{
+	width: 50%;
+}
+
+.container-slide1{
+	display: flex;
+	align-items: flex-end;
+}
+
+.title1{
+	font-family: 'Lato', sans-serif;
+	font-size: 58px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.button1{
+	text-decoration: none;
+	color: #fff;
+	font-size: 21px;
+	line-height: 100%;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 11px 29px;
+	margin-right: 26px;
+}
+
+
+.button2{
+	text-decoration: none;
+	color: #661466;
+	font-size: 21px;
+	line-height: 100%;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 13px 31px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 1%, #939393 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 1%,#939393 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 1%,#939393 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#939393',GradientType=0 ); /* IE6-9 */
+}
+
+.button1:hover{
+	background: #fff;
+	color:#212121 ;
+}
+
+.button2:hover{
+	background: #212121;
+	color: #fff;
+}
+
+.container-slide2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.container-slide2:before{
+	content: '';
+}
+
+.img-slide2{
+	text-align: center;
+}
+
+.title2{
+	font-size: 60px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.container-slide3{
+	display: flex;
+	align-items: center;
+}
+
+.container-slide3 h2{
+	font-size: 35px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+}
+
+.container-slide3 p{
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 50px;
+	line-height: 20px;
+}
+
+
+
+
+.logo{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 30px;
+	text-align: center;
+	z-index: 200;
+}
+
+
+.swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+.swiper-slide {
+      
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+.swiper-pagination-bullet{
+	height: 20px;
+	width: 20px;
+	opacity: 1;
+	border: 2px solid #fff;
+	background: none;
+}
+
+.swiper-pagination-bullet-active{
+	background: #fff;
+}
+
+.swiper-slide{
+	background: #661466; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #661466 0%, #c889ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #661466 0%,#c889ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #661466 0%,#c889ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#661466', endColorstr='#c889ff',GradientType=1 );
+}
