@@ -39,4 +39,4 @@
 [Anchor \ Adaptive menu to the site](https://wladislaw28.github.io/%D0%AF%D0%BA%D0%BE%D1%80%D0%BD%D0%BE%D0%B5%D0%9C%D0%B5%D0%BD%D1%8E/) - Anchor \ Adaptive menu to the site
 
 
-## Projects created exclusively with JS
+### Projects created exclusively with JS
