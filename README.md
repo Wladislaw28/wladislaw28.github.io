@@ -31,3 +31,6 @@
 
 
 [Video background for sites](https://wladislaw28.github.io/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE_%D0%A4%D0%BE%D0%BD/) - Video background for sites
+
+
+[Simple calculator](https://wladislaw28.github.io/%D0%9A%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80/) - Simple calculator
