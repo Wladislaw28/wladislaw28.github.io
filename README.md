@@ -43,3 +43,6 @@
 
 
 [	usingCanvas#1](https://wladislaw28.github.io/Canvas/index.html) - 	usingCanvas#1
+
+
+[	usingCanvas#2](https://wladislaw28.github.io/Canvas1/) - 	usingCanvas#2
