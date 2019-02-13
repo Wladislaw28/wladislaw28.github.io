@@ -40,3 +40,6 @@
 
 
 ### Projects created exclusively with JS
+
+
+[	usingCanvas#1](https://wladislaw28.github.io/Canvas/index.html) - 	usingCanvas#1
