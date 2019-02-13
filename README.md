@@ -46,3 +46,6 @@
 
 
 [	usingCanvas#2](https://wladislaw28.github.io/Canvas1/) - 	usingCanvas#2
+
+
+[Google Map](https://wladislaw28.github.io/Google%20Maps%20API/index.html) - 	Connecting Google Maps via JS
