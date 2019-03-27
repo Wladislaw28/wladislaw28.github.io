@@ -53,3 +53,5 @@
 
 [To Do List](https://wladislaw28.github.io/ToDoList/) - web application to record your daily tasks
 
+
+[Аutomatic text entry script](https://wladislaw28.github.io/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87_%D0%92%D0%B2%D0%BE%D0%B4_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B0/index.html) - automatic text entry script
