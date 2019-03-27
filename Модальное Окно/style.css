@@ -1,0 +1,83 @@
+#modalForm{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 150;
+	display: none;
+	margin: 0 auto;
+	width: 450px;
+	height: 500px;
+}
+#filter{
+	background-color: rgba(0, 0, 0, .6);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+body{
+	font-family: Tahoma;
+	margin: 0;
+}
+
+h1{
+	cursor: help;
+	margin: 0;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #5200a5;
+}
+
+form{
+	margin: 0 auto;
+	background: rgb(0, 186, 255);
+	width: 450px;
+	height: 500px;
+	padding: 20px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+}
+
+.group{
+	margin: 10px;
+	padding: uppercase;
+}
+label{
+	padding-left: 10px;
+	text-transform: uppercase;
+}
+input{
+	margin-top: 10px;
+	height: 40px;
+	width: 400px;
+	border-radius: 20px/20px;
+	border: none;
+	padding-left: 15px;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .82)
+}
+input:focus{
+	border: 2px solid #6c00ff;
+	transform: translateX(15px);
+	width: 385px;
+}
+button{
+	cursor: pointer;
+	padding: 10px 30px;
+	height: 50px;
+	color: #fff;
+	background: #5200a5;
+	border: none;
+	text-transform: uppercase;
+	font-size: 15px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, .82)
+}
+button:hover{
+	opacity: .80;
+	font-weight: bold;
+	transform: scale(1.1);
+}

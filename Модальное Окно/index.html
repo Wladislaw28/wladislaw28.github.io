@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Модальное Окно</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<center><button onclick="show('block')">Модальное Окно</button></center>
+	<div id="filter" onclick="show('none')"></div>
+	<div id="modalForm">
+		<form action="">
+		<h1 title="Форма регистрации на сайте">Регистрация</h1>
+		<div class="group">
+			<label for="">Имя пользователя</label>
+			<input type="text">
+		</div>
+		<div class="group">
+			<label for="">Пароль</label>
+			<input type="password">
+		</div>
+		<div class="group">
+			<label for="">Пароль еще раз</label>
+			<input type="password">
+		</div>
+		<div class="group">
+			<label for="">Адрес электронной почты</label>
+			<input type="email">
+		</div>
+		<div class="group">
+			<center><button>Регистрация</button></center>
+		</div>
+	</form>
+	</div>
+	<script src="modal.js"></script>
+</body>
+</html>
