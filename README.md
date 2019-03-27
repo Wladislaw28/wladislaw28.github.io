@@ -73,3 +73,6 @@
 
 
 [Game "Guess the word"](https://wladislaw28.github.io/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0JS/index.htmlhttps://wladislaw28.github.io/%D0%A3%D0%B3%D0%B0%D0%B4%D0%B0%D0%B9_%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE/) - Game "Guess the word"
+
+
+[Photo Gallery with slider](https://wladislaw28.github.io/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0JS/index.html) - Photo Gallery
