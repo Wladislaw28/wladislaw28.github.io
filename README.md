@@ -49,3 +49,7 @@
 
 
 [Google Map](https://wladislaw28.github.io/Google%20Maps%20API/index.html) - 	Connecting Google Maps via JS
+
+
+[To Do List](https://wladislaw28.github.io/ToDoList/) - web application to record your daily tasks
+
