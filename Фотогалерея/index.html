@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фотогалерея</title>
+	<style>
+		body{
+			background: url('img/back.png');
+		}
+		.myButton{
+			background-color: #007dc1;
+			border-radius: 3px;
+			border: 1px solid #124d77;
+			display: inline-block;
+			cursor: pointer;
+			color: #fff;
+			padding: 6px 25px;
+			text-decoration: none;
+		}
+		.myButton:hover{
+			background-color: #0061a7;
+		}
+		.myButton.active{
+			position: relative;
+			top: 1px;
+		}
+		.wrapper{
+			width: 1280px;
+			height: 720px;
+			margin: 10px auto;
+		}
+		.left_right{
+			position: absolute;
+			display: none;
+			cursor: pointer;
+			margin: -388px 0 0 10px;
+		}
+		img#images{
+			border: double black 6px;
+		}
+		#left, #right{
+			width: 70px;
+			height: 70px;
+			background: rgba(0, 0, 0, .7);
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div onmouseover="btn_show()" onmouseout ="btn_noshow()" class="wrapper">
+		<script>
+			var imageArray = [
+				"img/1.jpg",
+				"img/2.jpg",
+				"img/3.jpg",
+				"img/4.jpg",
+				"img/5.jpg"
+			];
+			window.number = '0';
+			var imageCount = imageArray.length;
+			function image(num) {
+				if (num == 1) {
+					if (number < imageCount - 1) {
+						number++;
+						document.getElementById('images').src = imageArray[number];
+						document.getElementById('num_img').innerHTML = number + 1 + '/' + imageCount;
+					}
+				} else {
+					if (number > 0) {
+						number--;
+						document.getElementById('images').src = imageArray[number];
+						document.getElementById('num_img').innerHTML = number + 1 + '/' + imageCount;
+					}
+				}
+			}
+			function btn_show(){
+				if(number != 0) document.getElementById('left').style.display = 'block';
+				if(number != imageCount - 1) document.getElementById('right').style.display = 'block';
+			}
+			function btn_noshow(){
+				document.getElementById('left').style.display = 'none';
+				document.getElementById('right').style.display = 'none';
+			}
+			document.write(' <img id="images" src="'+ imageArray[0] + '"> ');
+		</script>
+
+		<div id="left" onclick="image(0)" class="left_right">
+			<img src="img/left.png" alt="">
+		</div>
+		<div id="right" onclick="image(1)" class="left_right" style="margin-left:1200px; position: absolute; display: none; ">
+			<img src="img/right.png" alt="">
+		</div>
+	</div>
+	
+	<center>
+		<p style="font-size: 18px; color: #333; font-weight: bold;" id="num_img"></p>
+	</center>
+	<center>
+		<span class="myButton" onclick="image(0)">&lt;</span>
+		<span class="myButton" onclick="image(1)">&gt;</span>
+	</center>	
+</body>
+</html>
