@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Камень Ножницы Бумага Game</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div class="score-board">
+		<div class="badge" id="user-label">user</div>
+		<div class="badge" id="computer-label">comp</div>
+		<span id="user-score">0</span>:<span id="computer-score">0</span>
+	</div>
+
+	<div class="result">
+		<p>Paper covers rock. You win!</p>
+	</div>
+
+	<div class="choices">
+
+		<div class="choice" id="r">
+			<img src="img/камень.png" alt="">
+		</div>
+
+		<div class="choice" id="p">
+			<img src="img/бумага.png" alt="">
+		</div>
+		
+		<div class="choice" id="s">
+			<img src="img/ножницы.png" alt="">
+		</div>
+	</div>
+
+	<p id="action-message">Сделай свой.</p>
+
+	<script src="app.js" charset="utf-8"></script>
+</body>
+</html>
