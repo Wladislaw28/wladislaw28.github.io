@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="styles.css">
+	<title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="app">
+		<div class="app__header">
+			<div class="app__title"><span class="app__title-text">To Do List</span></div>
+			<div class="app__info">
+				<div class="app__info-item">
+					<span class="app__info-text">Всего задач</span>
+					<span class="app__info-number" id="js-all-tasks"></span>
+				</div>
+				<div class="app__info-item">
+					<span class="app__info-text">Выполнено задач</span>
+					<span class="app__info-number" id="js-done-tasks"></span>
+				</div>
+			</div>
+		</div>
+		<div class="app__body">
+			<ul class="app__list" id="app__list"></ul>
+		</div>
+		<div class="app__footer">
+			<input class="app__task-new" id="app__task-new" placeholder="Add new task">
+		</div>
+	</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
