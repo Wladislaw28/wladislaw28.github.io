@@ -1,0 +1,1050 @@
+$gray: #edf2f4;
+$white: #ffffff;
+$orange: #ff7e42;
+$brown: #433c39;
+$green: #95d0aa;
+$black: #000;
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Medium.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Light.ttf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Thin.ttf");
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-SemiBold.ttf");
+	font-weight: 600;
+}
+
+body, html {
+	font-family: 'Montserrat';
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation */
+
+.collapsing {
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.nav {
+	background: $gray;
+	height: 40px;
+	&-logo {
+		text-align: center;
+		width: 100px;
+		height: 40px;
+
+	}
+	&-box {
+		padding-top: 35px;
+
+		&-link {
+			text-decoration: none;
+			font-size: 24px;
+			font-weight: 400;
+			color: $brown;
+			&:hover {
+				text-decoration: none;
+				color: inherit;
+			}
+		}
+	}
+}
+.navbar-brand {
+	margin-right: 150px;
+
+}
+
+.icon {
+	height: 55px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	padding-right: 110px;
+}
+/*  Header */
+
+.nav-item-icon {
+	padding-top: 5px;
+	float:left;
+	text-align: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+    vertical-align: middle;
+}
+
+.nav-item-text {
+	float: right;
+
+}
+
+.logo-copyright {
+	font-size: 7px;
+}
+
+.header {
+
+    width: 100%;
+    height: 950px;
+    background: url("../img/juul-vap-inline.jpg") no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &-box {
+    	margin-top: 160px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: $gray;
+
+    	&-h {
+    		margin-top: 30px;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 24px;
+    		font-weight: 500;
+    		color: $brown;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		border-radius: 10px;
+    		border: 1px solid;
+    		border-color: $brown;
+    		font-size: 24px;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+    			&::placeholder {
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+    			border-color: $green;
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: $orange;
+    		border: none;
+    		border-radius: 10px;
+    		color: $white;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 320px;
+    		margin-top: 30px;
+    		height: 55px;
+    		&:hover {
+    			background-color: lighten($orange, 10%);
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+/* Decription */
+
+h2 {
+	margin-top: 70px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 400;
+	color: $black;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+
+.description {
+
+	&-header {
+		margin-bottom: 80px;
+	}
+
+	&-line {
+		margin-bottom: 30px;
+	}
+
+	&-subline {
+		margin-bottom: 75px;
+		p {
+			font-size: 18px;
+			font-weight: 400;
+		}
+	} 
+
+	&-image {
+		text-align: center;
+		margin-bottom: 150px;
+	}
+
+	&-advantages{
+		margin-bottom: 75px;
+		p {
+			font-size: 18px;
+			font-weight: 400;
+		}
+		&-line {
+			margin-bottom: 75px;
+		}
+	}
+}
+
+
+/* JuuLpod */
+
+.juulpod {
+	background-color: $gray;
+	height: 100%;
+	padding-bottom: 150px;
+
+	&-box {
+		text-align: center;
+		&-description {
+			display:none;
+			background-color: $gray;
+			height: 90px;
+		}
+	}
+}
+
+.juulpod-box:hover .juulpod-box-description{
+	transition-duration: 1s;
+    display: block;
+    top:-30px;
+    z-index:9999;
+    border-radius: 10px;   
+}
+
+
+
+/* How it works? */
+
+
+.howitworks {
+	&-header {
+		
+	}
+	&-image {
+		margin-top: 70px;
+		height: 900px;
+	    background:  url("../img/juul-charging.jpg") no-repeat center center ;
+	    background-size: 100% 100%;
+	}
+
+	&-start {
+		padding-left: 100px;
+	}
+
+	&-indicator {
+		margin-top: 200px;
+		&-dots {
+			margin-bottom: 30px;
+			img {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	&-charger {
+		margin-top: 400px;
+	}
+
+}
+
+/* Easy to use */
+ 
+.easytouse {
+	background-color: $gray;
+
+	&-text {
+		text-align: center;
+		font-weight: 400;
+		font-size: 22px;
+		margin-bottom: 50px;
+	}
+}
+
+
+
+/* Offer box */
+
+.kit {
+	height: 900px;
+
+	&-logo {
+		margin-top: 110px;
+		width: 205px;
+		height: 95px;
+		margin-bottom: 20px;
+		margin-left: 80px;
+
+	}
+
+	&-box-image {
+		width: 550px;
+		height: 460px;
+	}
+	&-description {
+		padding-bottom: 30px;
+		font-size: 24px;
+		font-weight: 400;
+		text-align: center;
+		&-addition {
+			font-weight: 100;
+			font-size: 12px;
+			margin-left: 40px;
+		}
+	}
+
+}
+
+
+
+
+
+/*  footer */
+
+.footer {
+    width: 100%;
+    height: 700px;
+    background-color: $gray;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    &-itemimage {
+    	text-align: center;
+    }
+    &-links {
+    	list-style: none;
+    }
+    &-item {
+    	text-align: center;
+    	&-icon {
+    		
+    		width: 32px;
+    		height: 32px;
+    		margin-bottom: 15px;
+    	}
+    	margin-top: 100px;
+    	a {
+    		text-decoration: none;
+    		font-size: 24px;
+    		color: $brown;
+    		&:hover {
+    			text-decoration: none;
+    			color: $orange;
+    		}
+    	}
+    }
+
+    &-box {
+    	margin-top: 60px;
+    	width: 310px;
+    	height: 500px;
+    	background-color: $white;
+
+    	&-h {
+    		margin-top: 30px;
+    		margin-bottom: 25px;
+    		text-align: center;
+    		font-size: 24px;
+    		font-weight: 500;
+    		color: $brown;
+    	}
+
+    	&-row {
+    		text-align: center;
+    		margin-bottom: 40px;
+    	}
+
+    	&-item {
+    		border-radius: 10px;
+    		border: 1px solid;
+    		border-color: $brown;
+    		font-size: 24px;
+    		width: 320px;
+    		height: 60px;
+    		padding-left: 10px;
+    		&:focus {
+    			&::placeholder {
+    				padding-left: 0px;
+    			}
+    			text-decoration: none;
+    			padding-left: 10px;
+    			border-color: $green;
+    		}
+    		&::placeholder {
+    			
+    			font-size: 20px;
+    			font-weight: 100;
+    		}
+    	}
+
+    	&-button {
+    		background-color: $orange;
+    		border: none;
+    		border-radius: 10px;
+    		color: $white;
+    		font-weight: 500;
+    		font-size: 24px;
+    		width: 320px;
+    		margin-top: 30px;
+    		height: 55px;
+    		&:hover {
+    			background-color: lighten($orange, 10%);
+    			-webkit-transition: all 0.4s ease 0s;
+                -moz-transition: all 0.4s ease 0s;
+                -ms-transition: all 0.4s ease 0s;
+                -o-transition: all 0.4s ease 0s;
+                transition: all 0.4s ease 0s;
+    		}
+    	}
+    }
+}
+
+
+
+@media (max-width: 420px) {
+	h2 {
+		font-size: 26px;
+		margin-top: 40px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.navbar-brand {
+	margin-right: 0px;
+
+}
+	.header {
+		background: url("../img/juul-vap-inline.jpg") no-repeat   scroll;
+		background-size: cover;
+	}
+	.header-box {
+		height: 440px;
+	}
+	.header-box-h {
+		font-size: 16px;
+	}
+	.header-box-item {
+		width: 240px;
+		height: 40px;
+		font-size: 18px;
+	}
+	.header-box-button {
+		width: 240px;
+		font-size: 18px;
+	}
+
+
+/* How it works? */
+.howitworks-image {
+  margin-top: 70px;
+  height: 900px;
+ 
+  background-size: 100% 100%; }
+
+.howitworks-start {
+  padding-left: 0px; 
+}
+
+.howitworks-start h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-start p{
+  font-size: 12px; 
+}
+
+.howitworks-indicator h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-indicator p{
+  font-size: 12px; 
+}
+
+.howitworks-charger h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-charger p{
+  font-size: 12px; 
+}
+
+.howitworks-indicator {
+  margin-top: 100px;
+  padding-left: 0px; }
+  .howitworks-indicator-dots {
+    margin-bottom: 30px; }
+    .howitworks-indicator-dots img {
+      margin-right: 10px; }
+
+.howitworks-charger {
+  margin-top: 20px; 
+  padding-left: 0px;
+  }
+
+/* Easy to use */
+.easytouse {
+  background-color: #edf2f4; }
+  .easytouse-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 50px; }
+
+
+
+
+	.description-advantages {
+		margin-bottom: 30px;
+	}
+	.description-subline p {
+		font-size: 14px;
+	}
+
+	.description-advantages p {
+		font-size: 14px;
+	}
+
+	.juulpod {
+		padding-bottom: 40px;
+	}
+
+	.juulpod-box-description p {
+		font-size: 14px;
+	}
+
+
+
+
+	.easytouse-text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.kit {
+		height: 700px;
+	}
+	.kit-logo {
+		width: 160px;
+		height: 110px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.kit-box {
+		text-align: center;
+	}
+	.kit-box-image {
+		width: 310px;
+		height: 250px;
+	}
+	.kit-description {
+		font-size: 16px;
+		padding-bottom: 0px;
+	}
+	.footer-box {
+		height: 440px;
+	}
+	.footer-box-h {
+		font-size: 16px;
+	}
+	.footer-box-item {
+		width: 240px;
+		height: 40px;
+		font-size: 12px;
+	}
+	.footer-box-button {
+		width: 240px;
+		font-size: 18px;
+	}
+	.footer {
+		height: 1000px;
+	}
+}
+
+
+
+@media (min-width: 421px) and (max-width:767px) {
+	h2 {
+		font-size: 26px;
+		margin-top: 40px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+	.navbar-brand {
+	margin-right: 0px;
+
+}
+	.header {
+		background: url("../img/juul-vap-inline.jpg") no-repeat   scroll;
+		background-size: cover;
+	}
+	.header-box {
+		height: 540px;
+		width: 400px;
+	}
+	.header-box-h {
+		font-size: 16px;
+	}
+	.header-box-item {
+		width: 330px;
+		height: 70px;
+		
+	}
+	.header-box-button {
+		width: 270px;
+		font-size: 18px;
+	}
+
+	.description-advantages {
+		margin-bottom: 30px;
+	}
+	.description-subline p {
+		font-size: 14px;
+	}
+
+	.description-advantages p {
+		font-size: 14px;
+	}
+
+	.juulpod {
+		padding-bottom: 40px;
+	}
+
+	.juulpod-box-description p {
+		font-size: 14px;
+	}
+
+/* How it works? */
+.howitworks-image {
+  margin-top: 70px;
+  height: 900px;
+ 
+  background-size: 100% 100%; }
+
+.howitworks-start {
+  padding-left: 0px; 
+}
+
+.howitworks-start h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-start p{
+  font-size: 12px; 
+}
+
+.howitworks-indicator h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-indicator p{
+  font-size: 12px; 
+}
+
+.howitworks-charger h4{
+	margin-top: 20px;
+  font-size: 14px; 
+}
+.howitworks-charger p{
+  font-size: 12px; 
+}
+
+.howitworks-indicator {
+  margin-top: 100px;
+  padding-left: 0px; }
+  .howitworks-indicator-dots {
+    margin-bottom: 30px; }
+    .howitworks-indicator-dots img {
+      margin-right: 10px; }
+
+.howitworks-charger {
+  margin-top: 20px; 
+  padding-left: 0px;
+  }
+
+
+	.easytouse-text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.kit {
+		height: 700px;
+	}
+	.kit-logo {
+		width: 160px;
+		height: 110px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.kit-box {
+		text-align: center;
+	}
+	.kit-box-image {
+		width: 310px;
+		height: 250px;
+	}
+	.kit-description {
+		font-size: 16px;
+		padding-bottom: 0px;
+	}
+
+	.footer {
+		height: 1200px;
+	}
+	.footer-box {
+		height: 540px;
+		width: 400px;
+	}
+	.footer-box-h {
+		font-size: 16px;
+	}
+	.footer-box-item {
+		width: 270px;
+		height: 70px;
+		
+	}
+	.footer-box-button {
+		width: 270px;
+		font-size: 18px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width:991px) {
+	h2 {
+		font-size: 32px;
+		margin-top: 40px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+	
+	.header-box {
+		height: 440px;
+		width: 300px;
+	}
+	.header-box-h {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.header-box-item {
+		width: 270px;
+		height: 50px;
+		
+	}
+	.header-box-button {
+		width: 270px;
+		font-size: 18px;
+		margin-top: 0px;
+	}
+
+	.description-advantages {
+		margin-bottom: 30px;
+	}
+	.description-subline p {
+		font-size: 18px;
+	}
+
+	.description-advantages p {
+		font-size: 18px;
+	}
+
+	.juulpod {
+		padding-bottom: 40px;
+	}
+
+	.juulpod-box-description p {
+		font-size: 14px;
+	}
+
+/* How it works? */
+.howitworks-image {
+  margin-top: 70px;
+  height: 900px;
+ 
+  background-size: 100% 100%; }
+
+.howitworks-start {
+  padding-left: 0px; 
+}
+
+.howitworks-start h4{
+	margin-top: 20px;
+  font-size: 16px; 
+}
+.howitworks-start p{
+  font-size: 14px; 
+}
+
+.howitworks-indicator h4{
+	margin-top: 20px;
+  font-size: 16px; 
+}
+.howitworks-indicator p{
+  font-size: 14px; 
+}
+
+.howitworks-charger h4{
+	margin-top: 20px;
+  font-size: 16px; 
+}
+.howitworks-charger p{
+  font-size: 14px; 
+}
+
+.howitworks-indicator {
+  margin-top: 100px;
+  padding-left: 0px; }
+  .howitworks-indicator-dots {
+    margin-bottom: 30px; }
+    .howitworks-indicator-dots img {
+      margin-right: 10px; }
+
+.howitworks-charger {
+  margin-top: 20px; 
+  padding-left: 0px;
+  }
+
+
+	.easytouse-text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.kit {
+		height: 700px;
+	}
+	.kit-logo {
+		width: 160px;
+		height: 110px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.kit-box {
+		text-align: center;
+	}
+	.kit-box-image {
+		width: 310px;
+		height: 250px;
+	}
+	.kit-description {
+		font-size: 16px;
+		padding-bottom: 0px;
+	}
+
+
+	.footer {
+		height: 1200px;
+	}
+	.footer-box {
+		height: 540px;
+	}
+	.footer-box-h {
+		font-size: 16px;
+	}
+	.footer-box-item {
+		width: 270px;
+		height: 70px;
+		
+	}
+	.footer-box-button {
+		width: 270px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+@media (min-width: 992px) and (max-width:1199px) {
+	h2 {
+		font-size: 32px;
+		margin-top: 40px;
+	}
+	h3 {
+		font-size: 22px;
+	}
+
+		margin-right: 300px;
+
+
+
+.navbar-brand {
+	margin-right: 100px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+	padding-right: 60px;
+}
+
+	
+
+	.howitworks-start p {
+		font-size: 14px;
+	}
+
+	.howitworks-start h4 {
+		font-size: 18px;
+	}
+
+	.howitworks-charger p {
+		font-size: 14px;
+	}
+
+	.howitworks-charger h4 {
+		font-size: 18px;
+	}
+
+	.howitworks-indicator p {
+		font-size: 14px;
+	}
+
+	.howitworks-indicator h4 {
+		font-size: 18px;
+	}
+
+	.howitworks-indicator-dots p {
+		font-size: 14px;
+	}
+
+
+	
+	.header-box {
+		height: 440px;
+		width: 300px;
+	}
+	.header-box-h {
+		font-size: 16px;
+		margin-top: 20px;
+	}
+	.header-box-item {
+		width: 270px;
+		height: 50px;
+		font-size: 12px;
+	}
+	.header-box-button {
+		width: 270px;
+		font-size: 18px;
+		margin-top: 0px;
+	}
+
+	.description-advantages {
+		margin-bottom: 30px;
+	}
+	.description-subline p {
+		font-size: 18px;
+	}
+
+	.description-advantages p {
+		font-size: 18px;
+	}
+
+	.juulpod {
+		padding-bottom: 40px;
+	}
+
+	.juulpod-box-description p {
+		font-size: 14px;
+	}
+
+	.easytouse-text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.kit {
+		height: 700px;
+	}
+	.kit-logo {
+		width: 160px;
+		height: 110px;
+		margin-top: 0px;
+	}
+	.kit-box {
+		text-align: center;
+	}
+	.kit-box-image {
+		width: 510px;
+		height: 450px;
+	}
+	.kit-description {
+		font-size: 16px;
+		padding-bottom: 0px;
+	}
+	.kit-description-box {
+		font-size: 16px;
+		margin-top: 60px;	}
+
+	.footer {
+		height: 700px;
+	}
+	.footer-box {
+		height: 540px;
+	}
+	.footer-box-h {
+		font-size: 16px;
+	}
+	.footer-box-item {
+		width: 270px;
+		height: 70px;
+		font-size: 12px;
+	}
+	.footer-box-button {
+		width: 270px;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+
