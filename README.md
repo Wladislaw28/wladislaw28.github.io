@@ -92,3 +92,8 @@ The reason is that instead of trying to synchronize the state between different 
 
 [React-App-Hacker-News](https://wladislaw28.github.io/react-model-api-hacher-news/) - This React application implements the news list from the open API Hacher News (https://hn.algolia.com/api/v1). As well as in this application, there is a search by news, selection by the number of pages on the main screen, as well as pagination.
 Application created for educational purposes. Thanks for the idea and implementation - YauhenKavalchuk
+
+
+[React-App-ToDo](https://wladislaw28.github.io/react-test-todo/) - Using the ToDo application, the user can create records (tasks) consisting of four input fields (input text; input date; select; textarea). Implemented functionality for adding, deleting, and marking a task as completed.
+Redux was used in the application.
+Application created for educational purposes. Thanks for the idea and implementation - YauhenKavalchuk
