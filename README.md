@@ -101,7 +101,7 @@ Redux was used in the application.
 
 
 [React-App-ToDo-ToDoWithData-ToDoWithSubList](https://github.com/Wladislaw28/react-redux-todo-wmreply/) - ([Source](https://github.com/Wladislaw28/react-redux-todo-wmreply))
-The application is a clone of the application (https://wladislaw28.github.io/react-test-todo/), but with added functionality. Namely: there are 3 types of tasks (1. normal \ 2. with date (a countdown occurs on the specified date, as a result of which the task is marked as completed) \ 3. Task with a lot of tasks inside it)
+The application is a clone of the application (https://wladislaw28.github.io/react-test-todo/), but with added functionality. Namely: there are 3 types of tasks (1. normal \ 2. with date (a countdown occurs on the specified date, as a result of which the task is marked as completed) \ 3. Task with a lot of tasks inside it). The application was created using React technology, and Typescript was used for typing, Redux.
 
 
 [React-App-Search-Giphy](https://wladislaw28.github.io/react-giphy-search-wmreply/) - 
