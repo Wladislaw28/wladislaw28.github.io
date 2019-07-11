@@ -3,7 +3,7 @@
 
 [Website Juul](https://wladislaw28.github.io/juul/juul%20site/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/juul/juul%20site)) Web site for the company Juul Belarus
 
-[Bootstrap-Site-Landing-Page](https://wladislaw28.github.io/2/index.html) - Fully responsive website. This site is Landing Page. Site layout is non-commercial.
+[Bootstrap-Site-Landing-Page](https://wladislaw28.github.io/2/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/2)) Fully responsive website. This site is Landing Page. Site layout is non-commercial.
 
 
 [Bootstrap gallery](https://wladislaw28.github.io/bootstrap_gallery/) - Adaptive photo gallery with the ability to download any of the pictures
