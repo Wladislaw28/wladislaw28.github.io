@@ -42,37 +42,37 @@
 ### Projects created exclusively with JS
 
 
-[	usingCanvas#1](https://wladislaw28.github.io/Canvas/index.html) - usingCanvas#1
+[	usingCanvas#1](https://wladislaw28.github.io/Canvas/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/Canvas)) usingCanvas#1
 
 
-[	usingCanvas#2](https://wladislaw28.github.io/Canvas1/) - 	usingCanvas#2
+[	usingCanvas#2](https://wladislaw28.github.io/Canvas1/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/Canvas1))	usingCanvas#2
 
 
-[Google Map](https://wladislaw28.github.io/Google%20Maps%20API/index.html) - 	Connecting Google Maps via JS
+[Google Map](https://wladislaw28.github.io/Google%20Maps%20API/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/Google%20Maps%20API))	Connecting Google Maps via JS
 
 
-[To Do List](https://wladislaw28.github.io/ToDoList/) - web application to record your daily tasks
+[To Do List](https://wladislaw28.github.io/ToDoList/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/ToDoList)) web application to record your daily tasks
 
 
-[Аutomatic text entry script](https://wladislaw28.github.io/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87_%D0%92%D0%B2%D0%BE%D0%B4_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B0/index.html) - automatic text entry script
+[Аutomatic text entry script](https://wladislaw28.github.io/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87_%D0%92%D0%B2%D0%BE%D0%B4_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B0/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87_%D0%92%D0%B2%D0%BE%D0%B4_%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D0%B0)) automatic text entry script
 
 
-[Snake Game](https://wladislaw28.github.io/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0JS/index.html) - Snake Game
+[Snake Game](https://wladislaw28.github.io/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0JS/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%97%D0%BC%D0%B5%D0%B9%D0%BA%D0%B0JS)) Snake Game
 
 
-[Game Rock Paper Scissors](https://wladislaw28.github.io/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C_%D0%9D%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B_%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0/) - Game Rock Paper Scissors
+[Game Rock Paper Scissors](https://wladislaw28.github.io/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C_%D0%9D%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B_%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%9A%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C_%D0%9D%D0%BE%D0%B6%D0%BD%D0%B8%D1%86%D1%8B_%D0%91%D1%83%D0%BC%D0%B0%D0%B3%D0%B0)) Game Rock Paper Scissors
 
 
-[Movement](https://wladislaw28.github.io/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0/) - Movement using keyboard keys
+[Movement](https://wladislaw28.github.io/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D0%B0%D1%82%D1%83%D1%80%D0%B0)) Movement using keyboard keys
 
 
-[Currency Converter](https://wladislaw28.github.io/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80%20%D0%92%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD/) - Currency Converter
+[Currency Converter](https://wladislaw28.github.io/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80%20%D0%92%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%BE%D1%80%20%D0%92%D0%B5%D0%BB%D0%B8%D1%87%D0%B8%D0%BD)) Currency Converter
 
 
-[Modal window with registration form](https://wladislaw28.github.io/%D0%9C%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9E%D0%BA%D0%BD%D0%BE/index.html) - Modal window with registration form
+[Modal window with registration form](https://wladislaw28.github.io/%D0%9C%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9E%D0%BA%D0%BD%D0%BE/index.html) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%9C%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%9E%D0%BA%D0%BD%D0%BE)) Modal window with registration form
 
 
-[Game "Guess the word"](https://wladislaw28.github.io/%D0%A3%D0%B3%D0%B0%D0%B4%D0%B0%D0%B9_%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE/) - Game "Guess the word"
+[Game "Guess the word"](https://wladislaw28.github.io/%D0%A3%D0%B3%D0%B0%D0%B4%D0%B0%D0%B9_%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE/) - ([Source](https://github.com/Wladislaw28/wladislaw28.github.io/tree/master/%D0%A3%D0%B3%D0%B0%D0%B4%D0%B0%D0%B9_%D0%A1%D0%BB%D0%BE%D0%B2%D0%BE)) Game "Guess the word"
 
 
 ### Projects created with React JS
