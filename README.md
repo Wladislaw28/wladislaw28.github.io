@@ -97,3 +97,5 @@ Application created for educational purposes. Thanks for the idea and implementa
 [React-App-ToDo](https://wladislaw28.github.io/react-test-todo/) - Using the ToDo application, the user can create records (tasks) consisting of four input fields (input text; input date; select; textarea). Implemented functionality for adding, deleting, and marking a task as completed.
 Redux was used in the application.
 
+[React-App-ToDo-ToDoWithData-ToDoWithSubList](https://github.com/Wladislaw28/react-redux-todo-wmreply/) - 
+The application is a clone of the application (https://wladislaw28.github.io/react-test-todo/), but with added functionality. Namely: there are 3 types of tasks (1. normal \ 2. with date (a countdown occurs on the specified date, as a result of which the task is marked as completed) \ 3. Task with a lot of tasks inside it)
