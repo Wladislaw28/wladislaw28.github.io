@@ -1,5 +1,5 @@
-# Wladislaw Mihasev
-# Junior Front-End developer
+# Vladislav Mihasev
+# Junior Front-End developer(js\html\css\react\typescript)
 
 [Website Juul](https://wladislaw28.github.io/juul/juul%20site/index.html) - Web site for the company Juul Belarus
 
