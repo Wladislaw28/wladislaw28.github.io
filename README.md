@@ -77,30 +77,30 @@
 
 ### Projects created with React JS
 
-[React-App-TranspOfLondon](https://wladislaw28.github.io/react-app-transport-london/) - React-App about Transport of London(created using API - https://www.transportapi.com/ 
+[React-App-TranspOfLondon](https://wladislaw28.github.io/react-app-transport-london/) - ([Source](https://github.com/Wladislaw28/react-app-transport-london)) React-App about Transport of London(created using API - https://www.transportapi.com/ 
 Functional: input data is the name of the train stops
 The output is:
 1) full name of the stop
 2) coordinates of the stop on the map
 3) stop indicator)
 
-[React-App-Weather-Cities](https://wladislaw28.github.io/react-app-weather-cities/) - React-App is a service for receiving weather (pressure, temperature, location, sunset) of a specific entered city. This application was created using the API (https://openweathermap.org/api)
+[React-App-Weather-Cities](https://wladislaw28.github.io/react-app-weather-cities/) - ([Source](https://github.com/Wladislaw28/react-app-weather-cities)) React-App is a service for receiving weather (pressure, temperature, location, sunset) of a specific entered city. This application was created using the API (https://openweathermap.org/api)
 
 
-[React-App-Calculate-Water-Boiling](https://wladislaw28.github.io/react-app-calculate-water/) - This application is created using React library. The application allows - whether the water boils at a given temperature.
+[React-App-Calculate-Water-Boiling](https://wladislaw28.github.io/react-app-calculate-water/) - ([Source](https://github.com/Wladislaw28/react-app-calculate-water)) This application is created using React library. The application allows - whether the water boils at a given temperature.
 In this application, the "Lifting status" method is implemented. 2 input fields work synchronously with each other (“source of truth” - App.js).
 The reason is that instead of trying to synchronize the state between different components, you need to rely on a unidirectional data stream.
 
 
-[React-App-Hacker-News](https://wladislaw28.github.io/react-model-api-hacher-news/) - This React application implements the news list from the open API Hacher News (https://hn.algolia.com/api/v1). As well as in this application, there is a search by news, selection by the number of pages on the main screen, as well as pagination.
+[React-App-Hacker-News](https://wladislaw28.github.io/react-model-api-hacher-news/) - ([Source](https://github.com/Wladislaw28/react-model-api-hacher-news)) This React application implements the news list from the open API Hacher News (https://hn.algolia.com/api/v1). As well as in this application, there is a search by news, selection by the number of pages on the main screen, as well as pagination.
 Application created for educational purposes. Thanks for the idea and implementation - YauhenKavalchuk
 
 
-[React-App-ToDo](https://wladislaw28.github.io/react-test-todo/) - Using the ToDo application, the user can create records (tasks) consisting of four input fields (input text; input date; select; textarea). Implemented functionality for adding, deleting, and marking a task as completed.
+[React-App-ToDo](https://wladislaw28.github.io/react-test-todo/) - ([Source](https://github.com/Wladislaw28/react-test-todo)) Using the ToDo application, the user can create records (tasks) consisting of four input fields (input text; input date; select; textarea). Implemented functionality for adding, deleting, and marking a task as completed.
 Redux was used in the application.
 
 
-[React-App-ToDo-ToDoWithData-ToDoWithSubList](https://github.com/Wladislaw28/react-redux-todo-wmreply/) - 
+[React-App-ToDo-ToDoWithData-ToDoWithSubList](https://github.com/Wladislaw28/react-redux-todo-wmreply/) - ([Source](https://github.com/Wladislaw28/react-redux-todo-wmreply))
 The application is a clone of the application (https://wladislaw28.github.io/react-test-todo/), but with added functionality. Namely: there are 3 types of tasks (1. normal \ 2. with date (a countdown occurs on the specified date, as a result of which the task is marked as completed) \ 3. Task with a lot of tasks inside it)
 
 
